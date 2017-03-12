@@ -1,4 +1,4 @@
-import {store} from "./vue-components";
+import {store} from "./store.js";
 import {where} from "underscore";
 
 export const jsonFilter = {

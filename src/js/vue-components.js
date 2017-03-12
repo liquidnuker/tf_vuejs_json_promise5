@@ -1,14 +1,5 @@
 const Vue = require("./vendor/vue.min.js");
-
-// 
-// ======================================================/
-const store = {
-  debug: true,
-  state: {
-    message: "",
-    filteredId: ""
-  }
-};
+import {store} from "./store.js";
 
 // 
 // ======================================================/
@@ -38,4 +29,4 @@ const vmC = new Vue({
   }
 });
 
-export {store, vmA, vmB, vmC};
+export {vmA, vmB, vmC};
