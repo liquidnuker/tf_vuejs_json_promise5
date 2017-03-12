@@ -1,7 +1,7 @@
 import {store} from "./store.js";
 import {where} from "underscore";
 
-export const jsonFilter = {
+const jsonFilter = {
   filter: (speciesToFilter) => {
     return new Promise(function (resolve, reject) {
       $("#paginator").jPages("destroy");
@@ -34,3 +34,5 @@ export const jsonFilter = {
     console.log(store.state.filteredId);
   }
 };
+
+export {jsonFilter};
